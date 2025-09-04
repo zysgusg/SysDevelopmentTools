@@ -1,0 +1,48 @@
+% !TEX program = xelatex
+% 这是中国海洋大学本科毕业论文的封面模板
+% 请在主文档中使用 \input{titlepage.tex} 调用此文件
+
+\thispagestyle{empty} % 封面不显示页码
+
+
+% --- 自定义命令 ---
+\newcommand{\degreeclass}{本科} % 学位类型
+\newcommand{\universityname}{中国海洋大学}
+
+% --- 封面内容 ---
+\begin{titlepage}
+    \centering
+
+    % 页眉信息
+    \vspace*{-2cm} % 调整与页面顶部的距离
+    \vspace{1.5cm} % 与Logo之间的垂直间距
+
+    % Logo
+    \begin{flushright}
+        \includegraphics[width=0.15\textwidth]{pic/ouc_logo.eps} % 请确保 OUC_Logo.png 文件存在且路径正确
+    \end{flushright}
+    \vspace{2cm} % 与正标题之间的垂直间距
+
+    % 主标题
+    {\zihao{2} \heiti \textbf{系统开发工具基础实验报告}}
+    \par \vspace{1.5cm} % 与副标题之间的垂直间距
+
+    % 副标题 (题目)
+    {\zihao{2} \heiti \textbf{题目：}\quad \underline{版本控制(git)}}
+    \par \vspace{3cm} % 与学生信息之间的垂直间距
+
+    % 学生及指导教师信息
+    \begin{tabular}{r l}
+        \zihao{-4} \songti 学生姓名\quad & \underline{周洋迅} \quad 学号\quad \underline{24020007175} \\
+        \zihao{-4} \songti 学部、学院(中心)\quad & \underline{信息科学与工程学部} \\
+        \zihao{-4} \songti 专业\quad & \underline{计算机科学与技术} \\
+        \zihao{-4} \songti 日期\quad & \underline{2025} 年 \underline{8} 月 \underline{29} 日 \\
+        \zihao{-4} \songti github链接\quad & \underline{https://github.com/zysgusg/SysDevelopmentTools}\\
+    \end{tabular}
+    \par \vspace{2cm} % 与学校名称之间的垂直间距
+
+    % 学校名称
+    {\zihao{3} \heiti \textbf{\universityname}}
+    \par \vspace{1cm} % 页面底部留白
+
+\end{titlepage}
