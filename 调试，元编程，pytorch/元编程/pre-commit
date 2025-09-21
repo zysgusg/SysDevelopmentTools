@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# 在提交前自动编译 paper.pdf，构建失败则拒绝提交
+
+echo "Running 'make paper.pdf' as part of pre-commit hook..."
+
+if make paper.pdf; then
+    echo "'make paper.pdf' succeeded, proceeding with commit."
+else
+    echo "Error: 'make paper.pdf' failed. Commit aborted."
+    exit 1
+fi
